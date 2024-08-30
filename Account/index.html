@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ==reset== -->
+    <link rel="stylesheet" href="../HomePage/reset.css" />
+    <!-- ==font Poppins=== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == link fontawesome== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- css style== -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dự án cuối khóa_Account</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ==========top========== -->
+      <div class="top">
+        <p class="desc">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <a href="" class="shop_now desc">ShopNow</a>
+      </div>
+
+      <!-- ==========nav============== -->
+      <div class="main_content">
+        <nav class="nav">
+          <p class="logo desc">Exclusive</p>
+          <ul class="list">
+            <li class="item desc"><a href="../loggedIn/index.html">Home</a></li>
+            <li class="item desc"><a href="">Contact</a></li>
+            <li class="item desc"><a href="">About</a></li>
+            <li class="item desc">
+              <a href="../sign_up/index.htm">Sign Up</a>
+            </li>
+          </ul>
+          <div class="right">
+            <div class="search">
+              <input
+                type="text"
+                class="input desc"
+                placeholder="What are you looking for?"
+              /><button class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+            <a href="../Cart/index.html" class="cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <div
+              id="account_user"
+              class="account_user"
+              style="background-color: #db4444; color: #fff"
+            >
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <ul id="options_acc" class="options_acc">
+              <li class="item item1">
+                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                <a class="desc">Manage My Account</a>
+              </li>
+              <li class="item item2">
+                <div class="icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <a class="desc">My Order</a>
+              </li>
+              <li class="item item3">
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <a class="desc">My Cancellations</a>
+              </li>
+              <li class="item item4">
+                <div class="icon"><i class="fa-regular fa-star"></i></div>
+                <a class="desc">My Reviews</a>
+              </li>
+              <li class="item item5">
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <a href="../LogIn/index.html" class="desc">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ==============main start=========== -->
+    <main class="main">
+      <div class="main_content">
+        <!-- ==========top_main============ -->
+        <div class="top_main">
+          <div class="left">
+            <a href="../loggedIn/index.html" class="home desc">
+              <pre>Home   /</pre>
+            </a>
+            <p class="desc">My Account</p>
+          </div>
+          <p class="desc right">Welcome <span class="desc">Md Rimel</span></p>
+        </div>
+        <!-- =====contents -->
+        <div class="content">
+          <section class="menu_options">
+            <ul class="list_options">
+              <li class="desc title_option">Manage My Account</li>
+              <ul>
+                <li id="option_my_profile" class="desc option my_option active">
+                  My Profile
+                </li>
+                <li id="option_profile_update" class="desc option my_option">
+                  Profile Update
+                </li>
+                <li id="option_password_changes" class="desc option my_option">
+                  Password Changes
+                </li>
+                <li class="desc option">Address Book</li>
+                <li class="desc option">My Payment Options</li>
+              </ul>
+            </ul>
+            <ul class="list_options">
+              <li class="desc title_option">My Orders</li>
+              <ul>
+                <li class="desc option">My Returns</li>
+                <li class="desc option">My Cancellations</li>
+              </ul>
+            </ul>
+            <ul class="list_options">
+              <li class="desc title_option">My WishList</li>
+            </ul>
+          </section>
+          <!-- ======my profile===== -->
+          <div id="my_profile" class="my_profile media_option">
+            <p class="title desc section">My Profile</p>
+            <div class="box box_name">
+              <p class="desc">Name:</p>
+              <p id="my_name" class="my_name desc">Phan Song Hào</p>
+            </div>
+            <div class="box box_email">
+              <p class="desc">Email:</p>
+              <p id="my_email" class="my_email desc">hao@gmail.com</p>
+            </div>
+            <div class="box box_id">
+              <p class="desc">ID:</p>
+              <p id="my_id" class="my_id desc">1237658712</p>
+            </div>
+          </div>
+          <!-- =========profile update========== -->
+          <div id="profile_update" class="profile_update media_option">
+            <p class="desc title section">Profile Update</p>
+            <form id="form_profile_update" action="">
+              <div class="box">
+                <label for="" class="desc">Name:</label
+                ><input
+                  id="name_update"
+                  type="text"
+                  placeholder="Enter your new name"
+                />
+              </div>
+              <div class="box">
+                <label for="" class="desc">Email:</label
+                ><input
+                  id="email_update"
+                  type="text"
+                  placeholder="Enter your new email"
+                />
+                <label for="" class="error" id="error_email"
+                  >Email này đã tồn tại, nếu đó là email cũ của bạn thì để trống
+                  phần này</label
+                >
+              </div>
+              <div class="box box_password">
+                <label for="" class="desc">Password:</label
+                ><input
+                  id="password_update"
+                  type="password"
+                  placeholder="Enter your password"
+                />
+                <label for="" class="error" id="error_password"
+                  >Mật khẩu không được để trống</label
+                >
+                <div class="hidden_password">
+                  <div id="box_eye_update" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_update" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="box_btn">
+                <button class="btn">Cancel</button>
+                <button type="submit" class="btn">Update</button>
+              </div>
+            </form>
+          </div>
+          <!--=============== password changes================= -->
+          <div id="password_changes" class="password_changes media_option">
+            <p class="title desc section">Password Changes</p>
+            <form id="form_password_changes" action="">
+              <div class="box">
+                <label for="" class="desc">Old password</label
+                ><input
+                  id="old_password"
+                  type="text"
+                  placeholder="Enter old password"
+                />
+                <div class="hidden_password">
+                  <div id="box_eye_old" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_old" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+                <p id="error_old_password" class="error_changes"></p>
+              </div>
+              <div class="box">
+                <label for="" class="desc">New password</label
+                ><input
+                  id="new_password"
+                  type="text"
+                  placeholder="Enter new password"
+                />
+                <div class="hidden_password">
+                  <div id="box_eye_new" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_new" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+                <p id="error_new_password" class="error_changes"></p>
+              </div>
+              <div class="box">
+                <label for="" class="desc">Re-new password</label
+                ><input
+                  id="re-new_password"
+                  type="text"
+                  placeholder="Re-enter new password"
+                />
+                <div class="hidden_password">
+                  <div id="box_eye_re-new" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_re-new" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+                <p id="error_re-new_password" class="error_changes"></p>
+              </div>
+              <div class="box_btn">
+                <button class="btn">Cancel</button>
+                <button type="submit" class="btn">Changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =============main end============= -->
+    <!-- =======footer==================== -->
+    <footer class="footer">
+      <div class="main_content">
+        <div class="content">
+          <div class="item item1">
+            <p class="desc logo">Exclusive</p>
+            <p class="desc title">Subscribe</p>
+            <p class="desc">Get 10% off your first order</p>
+            <div class="email">
+              <input
+                type="email"
+                class="input"
+                placeholder="Enter your email"
+              />
+              <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
+            </div>
+          </div>
+          <div class="item item2">
+            <p class="desc title">Support</p>
+            <pre class="desc">
+    111 Bijoy sarani, Dhaka,
+    DH 1515, Bangladesh.</pre
+            >
+            <p class="desc">exclusive@gmail.com</p>
+            <p class="desc">+88015-88888-9999</p>
+          </div>
+          <div class="item item3">
+            <p class="desc title">Account</p>
+            <p class="desc">My Account</p>
+            <p class="desc">Login / Register</p>
+            <p class="desc">Cart</p>
+            <p class="desc">Wishlist</p>
+            <p class="desc">Shop</p>
+          </div>
+          <div class="item item4">
+            <p class="desc title">Quick Link</p>
+            <p class="desc">Privacy Policy</p>
+            <p class="desc">Terms Of Use</p>
+            <p class="desc">FAQ</p>
+            <p class="desc">Contact</p>
+          </div>
+          <div class="item item5">
+            <p class="desc title">Download App</p>
+            <p class="desc desc5">Save $3 with App New User Only</p>
+            <div class="app">
+              <div class="qr">
+                <img src="../img/img_PNG/Qrcode 1.svg" alt="" />
+              </div>
+              <div class="stores">
+                <img src="../img/img_PNG/GooglePlay.svg" alt="" class="store" />
+                <img src="../img/img_PNG/AppStore.svg" alt="" class="store" />
+              </div>
+            </div>
+            <div class="network">
+              <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======JS=========== -->
+    <script src="./main.js"></script>
+  </body>
+</html>

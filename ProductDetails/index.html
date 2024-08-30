@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ==reset== -->
+    <link rel="stylesheet" href="../HomePage/reset.css" />
+    <!-- ==font Poppins=== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == link fontawesome== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- css style== -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dự án cuối khóa_Product Details</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ==========top========== -->
+      <div class="top">
+        <p class="desc">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <a href="" class="shop_now desc">ShopNow</a>
+      </div>
+
+      <!-- ==========nav============== -->
+      <div class="main_content">
+        <nav class="nav">
+          <p class="logo desc">Exclusive</p>
+          <ul class="list">
+            <li class="item desc"><a href="../loggedIn/index.html">Home</a></li>
+            <li class="item desc"><a href="">Contact</a></li>
+            <li class="item desc"><a href="">About</a></li>
+            <li class="item desc">
+              <a href="../sign_up/index.htm">Sign Up</a>
+            </li>
+          </ul>
+          <div class="right">
+            <div class="search">
+              <input
+                type="text"
+                class="input desc"
+                placeholder="What are you looking for?"
+              /><button class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+            <div id="media_cart" class="media_cart">
+              <p
+                id="quantity_products_cart"
+                class="quantity_products_cart desc"
+              >
+                0
+              </p>
+              <a href="../Cart/index.html" class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+            <div id="account_user" class="account_user">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <ul id="options_acc" class="options_acc">
+              <li id="acccount_logged_in"></li>
+              <li class="item item1">
+                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                <a href="../Account/index.html" class="desc"
+                  >Manage My Account</a
+                >
+              </li>
+              <li class="item item2">
+                <div class="icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <a class="desc">My Order</a>
+              </li>
+              <li class="item item3">
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <a class="desc">My Cancellations</a>
+              </li>
+              <li class="item item4">
+                <div class="icon"><i class="fa-regular fa-star"></i></div>
+                <a class="desc">My Reviews</a>
+              </li>
+              <li class="item item5">
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <a href="../LogIn/index.html" class="desc">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ==============main=============== -->
+    <main class="main">
+      <div class="main_content">
+        <div class="top_main">
+          <a href="">
+            <pre class="desc">Account   /</pre></a
+          ><a href="">
+            <pre class="desc">Gaming   /</pre></a
+          ><a href="">
+            <pre class="desc">Havic HV G-92 Gamepad</pre>
+          </a>
+        </div>
+        <div id="see_product">
+          <!-- <div class="product_see">
+            <div class="list_secondary_images">
+              <img src="../img/img_products/g92-2-500x500 1.png" alt="" /><img
+                src="../img/img_products/g92-2-500x500 1.png"
+                alt=""
+              /><img src="../img/img_products/g92-2-500x500 1.png" alt="" /><img
+                src="../img/img_products/g92-2-500x500 1.png"
+                alt=""
+              />
+            </div>
+            <div class="box_main_image">
+              <img
+                class="main_image"
+                src="../img/img_products/g92-2-500x500 1.png"
+                alt=""
+              />
+            </div>
+            <div class="info">
+              <div class="top_info">
+                <p class="desc title">Havic HV G-92 Gamepad</p>
+                <div class="ratting">
+                  <div class="list_star">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="desc review">(150 Reviews)</p>
+                  <p class="desc">In Stock</p>
+                </div>
+                <p class="price desc">$<span>192</span></p>
+                <p class="describe desc">
+                  PlayStation 5 Controller Skin High quality vinyl with air
+                  channel adhesive for easy bubble free install & mess free
+                  removal Pressure sensitive.
+                </p>
+              </div>
+
+              <div class="product_options">
+                <div class="colours">
+                  <p class="desc">Colours:</p>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+                <div class="size">
+                  <p class="desc">Size:</p>
+                  <p class="desc item">XS</p>
+                  <p class="desc item">S</p>
+                  <p class="desc item">M</p>
+                  <p class="desc item">L</p>
+                  <p class="desc item">XL</p>
+                </div>
+                <div class="bot_option">
+                  <div class="change_quantity">
+                    <p class="change desc">-</p>
+                    <p class="desc quantity">2</p>
+                    <p class="change desc">+</p>
+                  </div>
+                  <button class="btn desc">Buy Now</button>
+                  <div class="wish_list_product">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="endows">
+                <div class="endow">
+                  <div class="icon_endow">
+                    <i class="fa-solid fa-truck"></i>
+                  </div>
+                  <div class="right">
+                    <p class="desc">Free Delivery</p>
+                    <p class="desc">
+                      Enter your postal code for Delivery Availability
+                    </p>
+                  </div>
+                </div>
+                <div class="endow">
+                  <div class="icon_endow">
+                    <i class="fa-solid fa-rotate-left"></i>
+                  </div>
+                  <div class="right">
+                    <p class="desc">Return Delivery</p>
+                    <p class="desc">Free 30 Days Delivery Returns. Details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- list Related item -->
+        <p class="bar_related desc section">Related Item</p>
+        <div class="list_products_related">
+          <!-- product 1 -->
+          <div class="cart_product" id="product_1">
+            <a href="">
+              <div class="product">
+                <a href="../ProductDetails/index.html">
+                  <img
+                    src="../img/img_products/g92-2-500x500 1.png"
+                    alt=""
+                    class="product_img see_product"
+                    id="image_product_1"
+                  />
+                </a>
+                <p class="sale desc">-40%</p>
+                <div class="wish_list">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="view">
+                  <a href=""><i class="fa-regular fa-eye"></i></a>
+                </div>
+                <p id="add_product_1" class="desc add">Add To Cart</p>
+              </div>
+            </a>
+            <div class="infor">
+              <a href=""><p class="desc name">HAVIT HV-G92 Gamepad</p></a>
+              <div class="price">
+                <p class="desc after">$ <span class="desc">120</span></p>
+                <p class="desc before">$160</p>
+              </div>
+              <div class="ratting">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="desc quantity">(88)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 2 -->
+          <div class="cart_product" id="product_2">
+            <a href="">
+              <div class="product">
+                <a href="../ProductDetails/index.html">
+                  <img
+                    src="../img/img_products/ak-900-01-500x500 1.png"
+                    alt=""
+                    class="product_img see_product"
+                    id="image_product_2"
+                  />
+                </a>
+                <p class="sale desc">-35%</p>
+                <div class="wish_list">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="view">
+                  <a href=""><i class="fa-regular fa-eye"></i></a>
+                </div>
+                <p id="add_product_2" class="desc add">Add To Cart</p>
+              </div>
+            </a>
+            <div class="infor">
+              <a href=""><p class="desc name">AK-900 Wired Keyboard</p></a>
+              <div class="price">
+                <p class="desc after">$ <span class="desc">960</span></p>
+                <p class="desc before">$1160</p>
+              </div>
+              <div class="ratting">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="grey fa-solid fa-star"></i>
+                </div>
+                <p class="desc quantity">(75)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 3 -->
+          <div class="cart_product" id="product_3">
+            <a href="">
+              <div class="product">
+                <a href="../ProductDetails/index.html">
+                  <img
+                    src="../img/img_products/g27cq4-500x500 1.png"
+                    alt=""
+                    class="product_img see_product"
+                    id="image_product_3"
+                  />
+                </a>
+                <p class="sale desc">-30%</p>
+                <div class="wish_list">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="view">
+                  <a href=""><i class="fa-regular fa-eye"></i></a>
+                </div>
+                <p id="add_product_3" class="desc add">Add To Cart</p>
+              </div>
+            </a>
+            <div class="infor">
+              <a href=""><p class="desc name">IPS LCD Gaming Monitor</p></a>
+              <div class="price">
+                <p class="desc after">$<span class="desc">370</span></p>
+                <p class="desc before">$400</p>
+              </div>
+              <div class="ratting">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="desc quantity">(99)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 4 -->
+          <div class="cart_product" id="product_4">
+            <a href="">
+              <div class="product">
+                <a href="../ProductDetails/index.html">
+                  <img
+                    src="../img/img_products/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png"
+                    alt=""
+                    class="product_img see_product"
+                    id="image_product_4"
+                  />
+                </a>
+                <p class="sale desc">-25%</p>
+                <div class="wish_list">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="view">
+                  <a href=""><i class="fa-regular fa-eye"></i></a>
+                </div>
+                <p id="add_product_4" class="desc add">Add To Cart</p>
+              </div>
+            </a>
+            <div class="infor">
+              <a href=""><p class="desc name">S-Series Comfort Chair</p></a>
+              <div class="price">
+                <p class="desc after">$<span class="desc">375</span></p>
+                <p class="desc before">$400</p>
+              </div>
+              <div class="ratting">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="desc quantity">(99)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ============footer ===============-->
+    <footer class="footer">
+      <div class="main_content">
+        <div class="content">
+          <div class="item item1">
+            <p class="desc logo">Exclusive</p>
+            <p class="desc title">Subscribe</p>
+            <p class="desc">Get 10% off your first order</p>
+            <div class="email">
+              <input
+                type="email"
+                class="input"
+                placeholder="Enter your email"
+              />
+              <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
+            </div>
+          </div>
+          <div class="item item2">
+            <p class="desc title">Support</p>
+            <pre class="desc">
+111 Bijoy sarani, Dhaka,
+DH 1515, Bangladesh.</pre
+            >
+            <p class="desc">exclusive@gmail.com</p>
+            <p class="desc">+88015-88888-9999</p>
+          </div>
+          <div class="item item3">
+            <p class="desc title">Account</p>
+            <p class="desc">My Account</p>
+            <p class="desc">Login / Register</p>
+            <p class="desc">Cart</p>
+            <p class="desc">Wishlist</p>
+            <p class="desc">Shop</p>
+          </div>
+          <div class="item item4">
+            <p class="desc title">Quick Link</p>
+            <p class="desc">Privacy Policy</p>
+            <p class="desc">Terms Of Use</p>
+            <p class="desc">FAQ</p>
+            <p class="desc">Contact</p>
+          </div>
+          <div class="item item5">
+            <p class="desc title">Download App</p>
+            <p class="desc desc5">Save $3 with App New User Only</p>
+            <div class="app">
+              <div class="qr">
+                <img src="../img/img_PNG/Qrcode 1.svg" alt="" />
+              </div>
+              <div class="stores">
+                <img src="../img/img_PNG/GooglePlay.svg" alt="" class="store" />
+                <img src="../img/img_PNG/AppStore.svg" alt="" class="store" />
+              </div>
+            </div>
+            <div class="network">
+              <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>
