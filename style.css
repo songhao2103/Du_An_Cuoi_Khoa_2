@@ -582,7 +582,7 @@ button {
   font-weight: 500;
 }
 
-/* .main .flash_sales .date .time .number {
+.main .flash_sales .date .time .number {
   color: var(--text_color_1, #000);
   font-family: Inter;
   font-size: 3.2rem;
@@ -590,7 +590,7 @@ button {
   line-height: 0.94;
   letter-spacing: 1.28px;
   margin-top: 4px;
-} */
+}
 .main .flash_sales .date .colon {
   margin-top: 30px;
 }
