@@ -198,6 +198,7 @@ button {
   color: var(--text_color_1);
   font-weight: 500;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .cart_product .infor .price {
@@ -649,6 +650,9 @@ button {
   margin-top: 60px;
 }
 
+.main .product_sale .infor .name {
+  text-align: left;
+}
 /* ===============browse========== */
 .main .browse {
   display: flex;

@@ -729,7 +729,9 @@ button {
   /* background-color: rebeccapurple; */
   margin-top: 60px;
 }
-
+.main .product_sale .infor .name {
+  text-align: left;
+}
 /* ===============browse========== */
 .main .browse {
   display: flex;
